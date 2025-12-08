@@ -1,0 +1,141 @@
+Movie,Character
+Mother India (1957),Radha
+Mother India (1957),Birju
+Mother India (1957),Shamu
+Mother India (1957),Sukhilala
+
+Shree 420 (1955),Raj
+Shree 420 (1955),Vidya
+Shree 420 (1955),Maya
+
+Do Bigha Zamin (1953),Shambhu
+Do Bigha Zamin (1953),Parvati
+Do Bigha Zamin (1953),Birju
+Do Bigha Zamin (1953),Thakur
+
+Baiju Bawra (1952),Baiju
+Baiju Bawra (1952),Gauri
+Baiju Bawra (1952),Tansen
+
+Kaagaz Ke Phool (1959),Suresh Sinha
+Kaagaz Ke Phool (1959),Shanti
+Kaagaz Ke Phool (1959),Chandramukhi
+
+Devdas (1955),Devdas
+Devdas (1955),Paro
+Devdas (1955),Chandramukhi
+
+Naya Daur (1957),Shankar
+Naya Daur (1957),Krishna
+Naya Daur (1957),Rajjo
+
+Madhumati (1958),Dev
+Madhumati (1958),Madhumati
+Madhumati (1958),Ustad
+
+Aan (1952),Jai
+Aan (1952),Jai’s Princess
+Aan (1952),Mangala
+
+Awaara (1951),Raju
+Awaara (1951),Rita
+Awaara (1951),Judge Raghunath
+
+CID (1956),Inspector Shekhar
+CID (1956),Kamini
+CID (1956),Gopal
+
+Pyaasa (1957),Vijay
+Pyaasa (1957),Gulabo
+Pyaasa (1957),Meena
+
+Barsaat (1949),Pran
+Barsaat (1949),Reshma
+
+Jaal (1952),Tony
+Jaal (1952),Maria
+
+Kismat (1954),Mohan
+Kismat (1954),Mala
+
+Boot Polish (1954),Belu
+Boot Polish (1954),Bhola
+Boot Polish (1954),John Chacha
+
+Jhanak Jhanak Payal Baaje (1955),Girdhar
+Jhanak Jhanak Payal Baaje (1955),Neela
+
+Mr. & Mrs. '55 (1955),Anita
+Mr. & Mrs. '55 (1955),Preetam
+
+Jagte Raho (1956),The Stranger
+Jagte Raho (1956),Rani
+
+Chori Chori (1956),Sagar
+Chori Chori (1956),Kammo
+
+Patita (1953),Radha
+Patita (1953),Nirmal
+
+Aurat (1953),Geeta
+Aurat (1953),Sohan
+
+Vachan (1955),Geeta
+Vachan (1955),Rajendra
+
+Sujata (1959),Sujata
+Sujata (1959),Adheer
+Sujata (1959),Charu
+
+Sharada (1957),Sharada
+Sharada (1957),Shekhar
+
+Detective (1958),Rajan
+Detective (1958),Rekha
+
+Phagun (1958),Bijan
+Phagun (1958),Banani
+
+Ek Hi Raasta (1956),Amar
+Ek Hi Raasta (1956),Malti
+Ek Hi Raasta (1956),Munna
+
+Insaniyat (1955),Ranjit
+Insaniyat (1955),Bimla
+Insaniyat (1955),Sheroo
+
+Mirza Ghalib (1954),Mirza Ghalib
+Mirza Ghalib (1954),Chaudhvin
+Mirza Ghalib (1954),Bahadur Shah Zafar
+
+Parivar (1956),Jagan
+Parivar (1956),Vimla
+
+Musafir (1957),Ravi
+Musafir (1957),Uma
+
+Jalsasghar (1958 Hindi),Biswambhar Roy
+Jalsasghar (1958 Hindi),Mahim
+
+Yahudi (1958),Ezra
+Yahudi (1958),Hannah
+Yahudi (1958),Brutus
+
+Chandi (1953),Chandi
+Chandi (1953),Bhola
+
+Railway Platform (1955),Ram
+Railway Platform (1955),Rekha
+
+Miss Mary (1957),Mary
+Miss Mary (1957),Sunil
+
+Parineeta (1953),Lalita
+Parineeta (1953),Shekhar
+Parineeta (1953),Girin
+
+Nau Do Gyarah (1957),Madhu
+Nau Do Gyarah (1957),Ravi
+
+Taxi Driver (1954),Mangal
+Taxi Driver (1954),Rekha
