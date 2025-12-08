@@ -1,0 +1,167 @@
+Dilwale Dulhania Le Jayenge (1995),Raj
+Dilwale Dulhania Le Jayenge (1995),Simran
+Dilwale Dulhania Le Jayenge (1995),Baldev Singh
+Dilwale Dulhania Le Jayenge (1995),Lajjo
+
+Hum Aapke Hain Koun (1994),Prem
+Hum Aapke Hain Koun (1994),Nisha
+Hum Aapke Hain Koun (1994),Rajesh
+Hum Aapke Hain Koun (1994),Pooja
+
+Kuch Kuch Hota Hai (1998),Rahul
+Kuch Kuch Hota Hai (1998),Anjali
+Kuch Kuch Hota Hai (1998),Tina
+Kuch Kuch Hota Hai (1998),Ms Briganza
+
+Dil To Pagal Hai (1997),Rahul
+Dil To Pagal Hai (1997),Pooja
+Dil To Pagal Hai (1997),Nisha
+
+Rangeela (1995),Mili
+Rangeela (1995),Munna
+Rangeela (1995),Raj Kamal
+
+Border (1997),Major Kuldeep Singh
+Border (1997),Bhairon Singh
+Border (1997),Mathura Das
+Border (1997),Lt Dharamveer
+
+Ghatak (1996),Kashi
+Ghatak (1996),Gauri
+Ghatak (1996),Katya
+
+Akele Hum Akele Tum (1995),Karan
+Akele Hum Akele Tum (1995),Priya
+Akele Hum Akele Tum (1995),Rohit
+
+Andaz Apna Apna (1994),Amar
+Andaz Apna Apna (1994),Prem
+Andaz Apna Apna (1994),Raveena
+Andaz Apna Apna (1994),Karishma
+Andaz Apna Apna (1994),Teja
+Andaz Apna Apna (1994),Crime Master Gogo
+
+Baazigar (1993),Ajay
+Baazigar (1993),Priya
+Baazigar (1993),Seema
+
+Darr (1993),Rahul
+Darr (1993),Kiran
+Darr (1993),Sunil
+
+Lamhe (1991),Virendra
+Lamhe (1991),Pallavi
+Lamhe (1991),Tara
+
+Jo Jeeta Wohi Sikandar (1992),Sanju
+Jo Jeeta Wohi Sikandar (1992),Ratan
+Jo Jeeta Wohi Sikandar (1992),Devika
+Jo Jeeta Wohi Sikandar (1992),Anjali
+
+Sadak (1991),Ravi
+Sadak (1991),Pooja
+Sadak (1991),Maharani
+
+Agneepath (1990),Vijay Dinanath Chauhan
+Agneepath (1990),Krishnan Iyer
+Agneepath (1990),Kancha Cheena
+
+Roja (1992 Hindi),Rishi
+Roja (1992 Hindi),Roja
+Roja (1992 Hindi),Liaqat
+
+Bombay (1995 Hindi),Shekhar
+Bombay (1995 Hindi),Shaila
+Bombay (1995 Hindi),Narasamma
+
+Dil (1990),Raja
+Dil (1990),Madhu
+Dil (1990),Hazari Prasad
+
+Beta (1992),Raju
+Beta (1992),Saraswati
+Beta (1992),Laxmi Devi
+
+Hum Dil De Chuke Sanam (1999),Nandini
+Hum Dil De Chuke Sanam (1999),Sameer
+Hum Dil De Chuke Sanam (1999),Vanraj
+
+Sarfarosh (1999),ACP Ajay Singh Rathod
+Sarfarosh (1999),Gulfam Hassan
+Sarfarosh (1999),Seema
+
+Pyaar To Hona Hi Tha (1998),Sanjana
+Pyaar To Hona Hi Tha (1998),Shekhar
+Pyaar To Hona Hi Tha (1998),Rahul
+
+Mohra (1994),Vishal
+Mohra (1994),Roma
+Mohra (1994),Jindal
+
+Ghulam (1998),Sidhu
+Ghulam (1998),Alisha
+Ghulam (1998),Ronan
+
+Hera Pheri (1999),Raju
+Hera Pheri (1999),Shyam
+Hera Pheri (1999),Baburao
+
+Judaai (1997),Raj
+Judaai (1997),Kaajal
+Judaai (1997),Janvi
+
+Dil Se (1998),Amar
+Dil Se (1998),Meghna
+Dil Se (1998),Preeti
+
+Pardes (1997),Arjun
+Pardes (1997),Ganga
+Pardes (1997),Rajiv
+
+Gupt (1997),Sahil
+Gupt (1997),Isha
+Gupt (1997),Sheetal
+Gupt (1997),Inspector Udham Singh
+
+Saat Rang Ke Sapne (1998),Mahipal
+Saat Rang Ke Sapne (1998),Durga
+
+Sooryavansham (1999),Heera
+Sooryavansham (1999),Thakur Bhanu Pratap
+Sooryavansham (1999),Radha
+
+Soldier (1998),Vicky
+Soldier (1998),Preeti
+Soldier (1998),Virendra
+
+Mann (1999),Dev
+Mann (1999),Priya
+Mann (1999),Raj
+
+Aa Ab Laut Chalen (1999),Rohan
+Aa Ab Laut Chalen (1999),Pooja
+Aa Ab Laut Chalen (1999),Sardar Khan
+
+Chachi 420 (1997),Lakshmi
+Chachi 420 (1997),Janki
+Chachi 420 (1997),Durgaprasad
+
+Hindustani (1996 Hindi),Senapathy
+Hindustani (1996 Hindi),Chandru
+Hindustani (1996 Hindi),Aishwarya
+
+Yeshwant (1997),Yeshwant
+Yeshwant (1997),Radha
+Yeshwant (1997),Salim
+
+Ziddi (1997),Deva
+Ziddi (1997),Jaya
+Ziddi (1997),Inspector Singh
+
+Raja Hindustani (1996),Raja
+Raja Hindustani (1996),Aarti
+Raja Hindustani (1996),Kunwar
+
+Aashiqui (1990),Rahul
+Aashiqui (1990),Anu
+Aashiqui (1990),Baba
