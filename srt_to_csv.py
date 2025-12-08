@@ -19,8 +19,9 @@ try:
 except:
     chardet = None
 
-RAW_DIR = "/home/pratik/projects/GenderBias_TrendAnalysis/dataset"          # where your downloaded .srt files live (organized by decade or flat)
-OUT_DIR = "/home/pratik/projects/GenderBias_TrendAnalysis/cleaned_dir"       # output per-decade and master CSV
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_DIR = os.path.join(BASE_DIR, "dataset")          # where your downloaded .srt files live (organized by decade or flat)
+OUT_DIR = os.path.join(BASE_DIR, "cleaned_dir")       # output per-decade and master CSV
 MASTER_CSV = os.path.join(OUT_DIR, "all_dialogues.csv")
 
 os.makedirs(OUT_DIR, exist_ok=True)

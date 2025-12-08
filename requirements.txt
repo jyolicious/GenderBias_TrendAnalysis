@@ -1,0 +1,60 @@
+# GenderBias TrendAnalysis - Python Dependencies
+# Compatible with Python 3.12+
+# For GPU support, see README.md for PyTorch CUDA installation
+
+# Core dependencies
+certifi==2025.11.12
+chardet==5.2.0
+charset-normalizer==3.4.4
+contourpy==1.3.3
+cycler==0.12.1
+emoji==2.15.0
+filelock==3.20.0
+fonttools==4.61.0
+fsspec==2025.12.0
+hf-xet==1.2.0
+huggingface-hub==0.36.0
+idna==3.11
+Jinja2==3.1.6
+joblib==1.5.2
+kiwisolver==1.4.9
+MarkupSafe==3.0.3
+matplotlib==3.10.7
+mpmath==1.3.0
+networkx==3.6
+numpy==2.3.5
+packaging==25.0
+pandas==2.3.3
+pillow==12.0.0
+protobuf==6.33.2
+pyparsing==3.2.5
+pysrt==1.1.2
+python-dateutil==2.9.0.post0
+python-slugify==8.0.4
+pytz==2025.2
+PyYAML==6.0.3
+regex==2025.11.3
+requests==2.32.5
+safetensors==0.7.0
+scikit-learn==1.7.2
+scipy==1.16.3
+sentence-transformers==5.1.2
+setuptools==80.9.0
+six==1.17.0
+stanza==1.11.0
+sympy==1.13.1
+text-unidecode==1.3
+threadpoolctl==3.6.0
+tokenizers==0.22.1
+tqdm==4.67.1
+transformers==4.57.3
+typing_extensions==4.15.0
+tzdata==2025.2
+urllib3==2.6.0
+
+# PyTorch (CPU version by default)
+# For GPU support with CUDA 12.1, uninstall these and run:
+# pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+torchaudio==2.5.1
+torchvision==0.20.1

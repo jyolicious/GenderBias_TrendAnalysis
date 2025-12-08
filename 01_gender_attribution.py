@@ -36,9 +36,10 @@ except Exception:
     stanza_available = False
 
 # -------- USER CONFIG ----------
-CLEANED_DIR = "/home/pratik/projects/GenderBias_TrendAnalysis/cleaned_dir"
-GENDERED_DIR = "/home/pratik/projects/GenderBias_TrendAnalysis/gendered_dir"
-GAZ_DIR = "/home/pratik/projects/GenderBias_TrendAnalysis/prominent_chars"  # place your per-decade txts here
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CLEANED_DIR = os.path.join(BASE_DIR, "cleaned_dir")
+GENDERED_DIR = os.path.join(BASE_DIR, "gendered_dir")
+GAZ_DIR = os.path.join(BASE_DIR, "prominent_chars")  # place your per-decade txts here
 MALE_NAMES_FILE = os.path.join(GAZ_DIR, "male_names.txt")   # optional (global names)
 FEMALE_NAMES_FILE = os.path.join(GAZ_DIR, "female_names.txt")
 MASTER_IN = os.path.join(CLEANED_DIR, "all_dialogues.csv")
@@ -75,7 +76,7 @@ FEMALE_DESC = {"beautiful","pretty","lovely","attractive","sexy","emotional"}
 MALE_DEP_LEMMAS = {"husband","father","son","brother"}
 FEMALE_DEP_LEMMAS = {"wife","mother","daughter","sister"}
 
-# ---------- stanza init (GPU optimized) ----------
+# ---------- stanza init (GPU optimized for RTX 2050 4GB) ----------
 nlp_en = None
 if stanza_available:
     try:
@@ -86,9 +87,9 @@ if stanza_available:
             use_gpu=True,
             device=0,
             verbose=False,
-            batch_size=32   # MASSIVE SPEED BOOST
+            batch_size=8   # Optimized for 4GB VRAM (RTX 2050) - safer than 15
         )
-        print("Stanza GPU pipeline initialized.")
+        print("Stanza GPU pipeline initialized with batch_size=8 for RTX 2050 (4GB VRAM)")
     except Exception as e:
         print("Failed to initialize stanza GPU:", e)
         nlp_en = None
@@ -578,6 +579,22 @@ def process_movie_csv(path_obj, decade_map, movie_index):
     return df, {"chars_used": char_list, "matched_title": norm_title, "matched_decade": dec_match, "title_candidate": title_candidate, "year": year}
 
 def main():
+    import time
+    start_time = time.time()
+    
+    # Check GPU availability
+    try:
+        import torch
+        if torch.cuda.is_available():
+            gpu_name = torch.cuda.get_device_name(0)
+            gpu_memory = torch.cuda.get_device_properties(0).total_memory / (1024**3)
+            print(f"✓ GPU Detected: {gpu_name} ({gpu_memory:.1f}GB VRAM)")
+            print(f"✓ CUDA Version: {torch.version.cuda}")
+        else:
+            print("⚠ GPU not available - running on CPU (will be slower)")
+    except:
+        pass
+    
     # load gazetteer
     decade_map, movie_index = load_gazetteer(GAZ_DIR)
     print("Loaded gazetteer decades:", list(decade_map.keys()))
@@ -586,15 +603,34 @@ def main():
     movie_paths = [p for p in pathlib.Path(CLEANED_DIR).rglob("*.csv") 
                    if p.name not in ["extraction_summary.csv"]]
     print(f"Found {len(movie_paths)} per-movie CSVs under {CLEANED_DIR}")
+    print(f"Estimated time: {len(movie_paths) * 0.5:.1f}-{len(movie_paths) * 2:.1f} minutes (GPU-accelerated)")
 
     master_rows = []
     summary = []
     low_confidence_utts = []
+    
+    # GPU memory management
+    try:
+        import torch
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()  # Clear GPU cache before starting
+    except:
+        pass
 
-    for p in tqdm(movie_paths):
+    for movie_num, p in enumerate(tqdm(movie_paths), 1):
         df_out, meta = process_movie_csv(p, decade_map, movie_index)
         if df_out is None:
             continue
+        
+        # Clear GPU memory every 5 movies to prevent overflow
+        if movie_num % 5 == 0:
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+            except:
+                pass
+        
         # write per-movie
         # derive decade from path parts or from meta matched_decade
         decade_folder = "unknown"
@@ -628,6 +664,15 @@ def main():
     if low_confidence_utts:
         pd.DataFrame(low_confidence_utts).to_csv(os.path.join(GENDERED_DIR, "low_confidence_utterances.csv"), index=False, quoting=csv.QUOTE_MINIMAL)
         print("Wrote low-confidence sample:", os.path.join(GENDERED_DIR, "low_confidence_utterances.csv"))
+    
+    # Print completion stats
+    elapsed = time.time() - start_time
+    print(f"\n{'='*60}")
+    print(f"✓ Processing Complete!")
+    print(f"  Time elapsed: {elapsed/60:.1f} minutes ({elapsed:.1f}s)")
+    print(f"  Movies processed: {len(summary)}")
+    print(f"  Avg time per movie: {elapsed/max(len(summary),1):.1f}s")
+    print(f"{'='*60}")
     print("Done.")
 
 if __name__ == "__main__":
